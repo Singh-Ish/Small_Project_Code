@@ -1,0 +1,11 @@
+C:\Users\sysc-gr\Desktop\Small_Project_Code\c#\Lynda C# basic\First-console-app\First-console-app\bin\Debug\netcoreapp2.1\First-console-app.deps.json
+C:\Users\sysc-gr\Desktop\Small_Project_Code\c#\Lynda C# basic\First-console-app\First-console-app\bin\Debug\netcoreapp2.1\First-console-app.runtimeconfig.json
+C:\Users\sysc-gr\Desktop\Small_Project_Code\c#\Lynda C# basic\First-console-app\First-console-app\bin\Debug\netcoreapp2.1\First-console-app.runtimeconfig.dev.json
+C:\Users\sysc-gr\Desktop\Small_Project_Code\c#\Lynda C# basic\First-console-app\First-console-app\bin\Debug\netcoreapp2.1\First-console-app.dll
+C:\Users\sysc-gr\Desktop\Small_Project_Code\c#\Lynda C# basic\First-console-app\First-console-app\bin\Debug\netcoreapp2.1\First-console-app.pdb
+C:\Users\sysc-gr\Desktop\Small_Project_Code\c#\Lynda C# basic\First-console-app\First-console-app\obj\Debug\netcoreapp2.1\First-console-app.csprojAssemblyReference.cache
+C:\Users\sysc-gr\Desktop\Small_Project_Code\c#\Lynda C# basic\First-console-app\First-console-app\obj\Debug\netcoreapp2.1\First-console-app.csproj.CoreCompileInputs.cache
+C:\Users\sysc-gr\Desktop\Small_Project_Code\c#\Lynda C# basic\First-console-app\First-console-app\obj\Debug\netcoreapp2.1\First-console-app.AssemblyInfoInputs.cache
+C:\Users\sysc-gr\Desktop\Small_Project_Code\c#\Lynda C# basic\First-console-app\First-console-app\obj\Debug\netcoreapp2.1\First-console-app.AssemblyInfo.cs
+C:\Users\sysc-gr\Desktop\Small_Project_Code\c#\Lynda C# basic\First-console-app\First-console-app\obj\Debug\netcoreapp2.1\First-console-app.dll
+C:\Users\sysc-gr\Desktop\Small_Project_Code\c#\Lynda C# basic\First-console-app\First-console-app\obj\Debug\netcoreapp2.1\First-console-app.pdb
