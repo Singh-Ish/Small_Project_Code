@@ -1,4 +1,5 @@
 //jshint esversion:6
+//jshint esversion:6
 
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -24,6 +25,9 @@ const userSchema = {
 
 const User = new mongoose.model("User",userSchema);
 
+
+// Get request
+
 app.get("/", function(req, res){
   res.render("home");
 
@@ -39,8 +43,11 @@ app.get("/register", function(req, res){
 
 });
 
+// post request
 
 app.post("/register",function(req,res){
+  console.log("in register");
+
   const newUser = new User({
     email: req.body.username,
     password:req.body.password
@@ -56,7 +63,35 @@ app.post("/register",function(req,res){
   });
 });
 
+app.post("/login", function(req,res){
+  console.log("In login");
+  res.render("secrets");
 
+});
+
+/*
+app.post("/login", function(req,res){
+  //const username = req.body.username;
+  //const password = req.body.password;
+
+  res.render("secrets");
+
+   User.findOne({email: username}, function(err,foundUser){
+    if(err){
+      console.log("can't find user");
+    } else{
+
+      if(foundUser){
+        if (foundUser.password === password) {
+          res.render("secrets");
+        }
+      }
+    }
+
+  });
+
+});
+*/
 app.listen(2000, function(){
   console.log("server started at port 2000");
 });
