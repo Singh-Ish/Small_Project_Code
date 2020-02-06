@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/studentdash.css">
+
+    <!-- custom css file inclusion using django-->
+    <link rel="stylesheet" href={% static "css/mystyle.css" %}>
+
+    <!-- jquery cdn -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.js"
+  integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+  crossorigin="anonymous"></script>
+
+
+  <!-- title -->
+
+    <title>Student Dashboard</title>
+  </head>
+
+  <!-- body begins here -->
+
+  <body>
+    <div class="container">
+      <h1>SA self Assessment</h1>
+
+      <p> welcome, <strong> <em>student Name</em> </strong> to the self assessment portal for your final project in system and computer Engineering Department SYSC 4907</p>
+
+      <p>Please confirm your project details:</p>
+      <!-- or create like a table -->
+      <p>Project Name  :  <strong>"Name of the project"</strong></p>
+      <p>Group Number  :  <strong>"Group number"</strong></p>
+      <p>Supervisor Name  :  <strong>"Name of the supervisor"</strong></p>
+      <!-- if the student has a supervisor then display his name -->
+      <p>Co-Supervisor Name  :  <strong>"Name of the cosupervisor"</strong></p>
+
+      <p> <em>Note: For any chnages in the details kindly contact your supervisor or administrative staff</em></p>
+    </div>
+
+    <div class="container">
+      <p>Kindly submit the self assessment for your project Group <button type="button" name="button">submit for all students</button></p>
+
+    </div>
+
+    <div class="container">
+      <p>table to display the present status for self assessment</p>
+
+      <div>
+        <table id= "statusTable">
+          <tr>
+            <th>Student Name</th>
+            <th>Links to submit assessment</th>
+            <th>Assessment Status</th>
+          </tr>
+          <tr>
+            <td>student 1 </td>
+            <td><a href=" "> assessment link </a></td>
+            <td>status</td>
+          </tr>
+        </table>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit and confirm</button>
+    </div>
+
+    <!-- adding other test info -->
+    <div class="container">
+    {{insert_me}}
+
+    <img src={% static "images/sce.PNG" %} alt="Uh Oh, didn't show !"/>
+    <h2>Here are your access records</h2>
+
+    <div class="djangotwo">
+      {% if access_records %}
+      <table>
+        <thead>
+          <th>Site Name</th>
+          <th>Data Accessed </th>
+        </thead>
+        {% for acc in access_records%}
+        <tr>
+          <td>{{acc.name}}</td>
+          <td>{{acc.date}}</td>
+        </tr>
+        {% endfor%}
+      </table>
+      {% else %}
+      <p>No Access Records Found</p>
+      {% endif %}
+    </div>
+
+    </div>
+    <!-- enable only if assessment status for all the students have been completed"-->
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Welcome!</h1>
+        <h2>Go to /users to sign up!</h2>
+      </div>
+    </div>
+
+  </body>
+</html>
