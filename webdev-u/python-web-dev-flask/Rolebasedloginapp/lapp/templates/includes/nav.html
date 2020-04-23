@@ -18,11 +18,11 @@
                 
                 
                 <ul class="nav navbar-nav navbar-right">
-                    <a class="nav-item nav-link {% if home %}active {% endif %}" href="{{ url_for('adash') }}">Admin Dash</a>
-                    <a class="nav-item nav-link {% if home %}active {% endif %}" href="{{ url_for('sdash') }}">Student Dash</a>
-                    <a class="nav-item nav-link " href="#">Sign Up</a>          
-                    <a class="nav-item nav-link " href="#">Login</a>
-                    <a class="nav-item nav-link " href="#">Logout</a>
+                    <a class="nav-item nav-link {% if adash %}active {% endif %}" href="{{ url_for('adash') }}">Admin Dash</a>
+                    <a class="nav-item nav-link {% if sdash %}active {% endif %}" href="{{ url_for('sdash') }}">Student Dash</a>
+                    <a class="nav-item nav-link {% if register %}active {% endif %}" href="{{ url_for('register') }}">Sign Up</a>          
+                    <a class="nav-item nav-link {% if login %}active {% endif %}" href="{{ url_for('login') }}">Login</a>
+                    <a class="nav-item nav-link {% if logout %}active {% endif %}" href="{{ url_for('logout') }}">Logout</a>
                 </ul>
 
             </div>
