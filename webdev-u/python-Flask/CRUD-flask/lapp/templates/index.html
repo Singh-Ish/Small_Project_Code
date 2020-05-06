@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div>
+    <h1> Welcome to Index page of the templates </h1>
+</div>
+
+<div class="container">
+    <br><br>
+    <h2 class="page-header">Users</h2>
+<!-- adding user button -->
+<br>
+<p>
+    <button type="button" class="btn btn-primary js-create-book">
+        <span class="material-icons">
+            add
+        </span>
+        User
+    </button>
+    <br>
+</p>
+
+
+    <table class="table" id="book-table">
+        <thead>
+            <tr>
+                <th>Name </th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Edit </th>
+                <th> Delete</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            
+            {% for u in users %}
+            <tr>
+                <td>{{ u.name }}</td>
+                <td>{{ u.email }}</td>
+                <td>{{ u.role }}</td>
+                <td><button class="btn btn-warning"><span class="material-icons">
+                    edit
+                </span> Edit</button></td>
+                <td><button class="btn btn-danger"> <span class="material-icons">
+                    clear
+                </span> Delete</button></td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="3" class="text-center ">No User</td>
+            </tr>
+            {% endfor %}
+            
+           
+        </tbody>
+    </table>
+</div>
+{% endblock %}

@@ -1,7 +1,0 @@
-Http return code cheat sheet
-
-1**   Hold on
-2**   Here You go
-3**   Go away
-4**   you fucked up
-5**   I fucked up 
