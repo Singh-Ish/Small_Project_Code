@@ -35,7 +35,7 @@
     /*
     height : 300px;
     overflow-y: scroll;
-    */
+*/
 }
 
 .block-video{
@@ -44,6 +44,16 @@ height: 300px;
 width: 500px;
 }
 
+html, body {
+  height: 100%;
+}
+
+
+
+.footer {
+  position: relative;
+  padding-top:100px;
+}
 
     </style>
 
@@ -60,7 +70,6 @@ width: 500px;
         {% block content %}
 
         {% endblock %}
-
 
 
     {% include 'includes/footer.html' %}
