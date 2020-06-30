@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid">
+
+    <div class="row">
+
+        <div class="col-md-3 col-lg-2 col-xl-2">side nav </div>
+
+        <div class="col-md-9 col-lg-10 col-xl-10"><h1> Welcome to templates </h1><br>
+        <div class="card w-50">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Button</a>
+          </div>
+            <div>
+
+
+            </div>
+
+
+        </div>
+        <!-- Button trigger modal -->
+
+            <br><br>
+            <div class="model">
+            <h2> Model demo launch</h2> <br>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          Launch demo modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Hi from the model, you can do various hings for the user over here
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+
+              </div>
+            </div>
+          </div>
+</div>
+        </div>
+
+            <br><br>
+            <h4>embeded video and scroll spy are commented </h4>
+
+            <div>
+                <h3>Embed video</h3>
+                <br>
+                <div class="embed-responsive embed-responsive-16by9 block-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kT-q31NzQUI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            {% include 'spysubnav.html' %}
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+
+{% endblock %}

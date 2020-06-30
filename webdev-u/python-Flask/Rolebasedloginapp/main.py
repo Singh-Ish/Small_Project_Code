@@ -1,0 +1,1 @@
+from lapp import app

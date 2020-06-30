@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends "bapp/base.html" %}
+
+{% block body_block %}
+    <h1>welcome to relative url template</h1>
+    <a href="{% url 'bapp:other' %}"> THE OTHER PAGE </a> <!-- need to be careful abou the syntax-->
+    <!--<a href="{% url 'bapp:relative' }"> the relative url page </a>-->
+
+    <!-- adding the admin page -->
+    <a href="{% url 'admin:index' %}">admin page</a>
+
+    <!-- going to index page -->
+    <a href="{% url 'index' %}"> Index page </a>
+{% endblock %}

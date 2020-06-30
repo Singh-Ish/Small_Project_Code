@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/studentdash.css">
+
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+        <h1>welcome to the form page</h1>
+    </div>
+
+    <div class="container">
+      <form  method="post">
+        {{form.as_p}}
+        {% csrf_token %}
+        <input type="submit" class= "btn btn-primary" name="" value="Submit">
+      </form>
+
+    </div>
+  </body>
+</html>
