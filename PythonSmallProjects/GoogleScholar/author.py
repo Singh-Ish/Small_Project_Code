@@ -120,7 +120,7 @@ text_file.close()
 
 
 ###### getting publications details
-
+'''
 def publicationDetails( p ):
     # p is the passed publication name
     search_query = scholarly.search_pubs(p)
@@ -135,3 +135,5 @@ def publicationDetails( p ):
 
 pub='Uses and abuses of EIDORS: an extensible software base for EIT'
 publicationDetails(pub)
+
+'''

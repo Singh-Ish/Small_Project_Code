@@ -6,12 +6,17 @@ import dash_auth
 
 from scholarly import scholarly
 import pandas as pd
+from scholarly import ProxyGenerator
 import json
 
+pg = ProxyGenerator()
+pg.FreeProxies()
+scholarly.use_proxy(pg)
 
 ##### dataframe from google scholar #####
 
 authors= ['Halim Yanikomeroglu','Andy Adler'] # name of professors to consider
+
 
 
 df = pd.DataFrame(columns=['id','name','affiliation','interest','citedby','citedbyyear','hindex','hindex5y','i10index','i10index5y'])
@@ -35,6 +40,7 @@ for z in authors:
 
 df.sort_values(by=['citedby'])
 
+df.to_excel("author.xlsx")
 
 
 
@@ -45,8 +51,7 @@ df.sort_values(by=['citedby'])
 
 
 
-
-
+'''
 ##### html rendering
 VALID_USERNAME_PASSWORD_PAIRS = [
     ['hello', 'world']
@@ -88,3 +93,4 @@ def update_output_div(input_value):
 
 if __name__ == '__main__':
     app.run_server()
+'''
